@@ -9,7 +9,13 @@
 #define PARSER_H_
 
 #define TAM_DATO 50
-
-int parser_ServiceFromText(FILE* pFile, LinkedList* pArrayListServicios);
+/** \brief Parsea los datos los datos de los servicios desde el archivo data.csv (modo texto).
+ *
+ * \param path char* ubicacion del archivo
+ * \param pArrayServicios LinkedList* lista de servicios
+ * \return int
+ *
+ */
+int parser_ServiceFromText(FILE* pFile, LinkedList* pArrayServicios);
 
 #endif /* PARSER_H_ */

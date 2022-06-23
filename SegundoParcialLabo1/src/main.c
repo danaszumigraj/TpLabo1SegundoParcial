@@ -159,6 +159,7 @@ int main(void)
 			}
 
 		break;
+		//SALIR
 		case 7:
 			if(flagGuardado==1)
 			{

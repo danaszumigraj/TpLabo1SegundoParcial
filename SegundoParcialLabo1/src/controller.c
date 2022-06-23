@@ -48,15 +48,15 @@ int controller_loadFromText(LinkedList* pArrayServicios)
 	return retorno;
 }
 
-int controller_ListServicios(LinkedList* pArrayListServicios)
+int controller_ListServicios(LinkedList* pArrayServicios)
 {
 	int retorno = -1;
 	eServicios* unServicio;
 
 	printf("||==========================================================================================||\n");
-	for(int i=0; i<ll_len(pArrayListServicios); i++)
+	for(int i=0; i<ll_len(pArrayServicios); i++)
 	{
-		unServicio = (eServicios*) ll_get(pArrayListServicios, i);
+		unServicio = (eServicios*) ll_get(pArrayServicios, i);
 		Servicios_print(unServicio);
 		retorno = 0;
 	}
